@@ -2,10 +2,10 @@
 
 # Things to remember :
 
-1.  After project is created, *create an app* with the following command :
+1.  After project is created, **create an app** with the following command :
   'python manage.py startapp [appname]'
 
-1.  Create a *urls.py* file inside the recently created app folder (see urls.py for example).
+1.  Create a **urls.py** file inside the recently created app folder (see urls.py for example).
 1.  Register the application urls.py onto the urls.py of the directory with the same name of the project.
     In this case, sbtemplates/sbtemplates/urls.py. (see the urls.py inside the mentioned directory for example of
       registration).
@@ -15,7 +15,7 @@
 
 1. Create these following directories inside the application ("store" in this case) :
    'store/templates/store' and 'store/static/store'
-1. Inside *static/store* copy the template files, inside *templates/store* create two html files like
+1. Inside **static/store** copy the template files, inside **templates/store** create two html files like
    layout.html and index.html and insert the html codes from the index.html that came with the startbootstrap template files. (see layout.html and index.html to see structure).
 1. Inside layout.html, add following line of code at very first line :
    '{% load static %}'
@@ -32,7 +32,7 @@
        path('', views.index, name='index'),
    ]'
 
-   then, render html from views.index inside *views.py*
+   then, render html from views.index inside **views.py**
 
    'def index(request):
        return render(request, 'store/index.html')'
