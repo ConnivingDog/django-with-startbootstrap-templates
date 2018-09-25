@@ -6,5 +6,11 @@ from django.template import loader
 def index(request):
 
     # REMINDER : when using render(), don't forget to include current app on settings.py
-    # for further instructions on adding apps, proceed to settings.py 
+    # for further instructions on adding apps, proceed to settings.py
     return render(request, 'store/index.html')
+
+def product(request):
+    return render(request, 'store/product.html')
+
+def checkout(request):
+    return render(request, 'store/checkout.html')

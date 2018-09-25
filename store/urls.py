@@ -8,4 +8,6 @@ app_name = 'store'
 urlpatterns = [
     # /[app name]/id/url
     path('', views.index, name='index'),
+    path('product/', views.product, name='product'),
+    path('checkout/', views.checkout, name='checkout'),
 ]
